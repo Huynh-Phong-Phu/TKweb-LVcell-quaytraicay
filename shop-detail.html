@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Đây là quầy trái cây của quầy Living Cells</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- audio -->
+        <audio src="./audio/merry.mp3" autoplay></audio>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top">
+            <div class="container topbar bg-primary d-none d-lg-block">
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="contact.html" class="text-white">TP. Hồ Chí Minh</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Livingcells@gmail.com</a></small>
+                    </div>
+                    <div class="top-link pe-2">
+                        <a href="#" class="text-white"><small class="text-white mx-2">Chính sách bảo mật</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white mx-2">Điều khoản sử dụng</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white ms-2">Bán hàng và hoàn tiền</small></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Quầy Rau Quả Living cells</h1></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link">Trang chủ</a>
+                            <a href="shop.html" class="nav-item nav-link">Nhân sự</a>
+                            <a href="shop-detail.html" class="nav-item nav-link active">Rau quả</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trang</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="cart.html" class="dropdown-item">Giỏ hàng</a>
+                                    <a href="chackout.html" class="dropdown-item">Thanh toán</a>
+                                    <a href="testimonial.html" class="dropdown-item">Đánh giá</a>
+                                    <a href="404.html" class="dropdown-item">Vòng quay may mắn</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <a href="chackout.html" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-bag fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="#" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bạn muốn tìm gì...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="Từ khóa" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">Rau quả</h1>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="cart.html">Trang</a></li>
+                <li class="breadcrumb-item active text-white">Rau Quả</li>
+            </ol>
+        </div>
+        <!-- Single Page Header End -->
+
+
+        <!-- Single Product Start -->
+        <div class="container-fluid py-5 mt-5">
+            <div class="container py-5">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-8 col-xl-9">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="border rounded">
+                                    <a href="#">
+                                        <img src="img/single-item.jpg" class="img-fluid rounded" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h4 class="fw-bold mb-3">Bông cải xanh</h4>
+                                <p class="mb-3">Danh mục: Rau Củ Quả</p>
+                                <h5 class="fw-bold mb-3">17.000 đ</h5>
+                                <div class="d-flex mb-4">
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                    <i class="fa fa-star text-secondary"></i>
+                                </div>
+                                <p class="mb-4">Bông cải xanh (hoặc súp lơ xanh, cải bông xanh, Broccoli) là một loại cây thuộc loài Cải bắp dại, có hoa lớn ở đầu, thường được dùng như rau. Bông cải xanh thường được chế biến bằng cách luộc hoặc hấp, nhưng cũng có thể được ăn sống như là rau sống trong những đĩa đồ nguội khai vị.</p>
+                                <p class="mb-4">Bông cải xanh là món ăn ưa thích, tuy nhiên khi chế biến bông cải xanh ở nhiệt độ cao, nhiều nghiên cứu đã cho thấy những thành phần vitamin đặc biệt là nhóm chất có tác dụng ngăn ngừa ung thư bị giảm. Lý do là  nhiệt độ cao sẽ làm mất hoạt tính của các enzyme và chất ESP, làm mất cân bằng của sulforaphane. Hơn nữa, lượng sulforaphane có đính thêm Sulphur trong bông cải xanh rất nhỏ, chỉ chiếm khoảng 20 % tổng số sulphoraphanes và rất dễ bị vô hiệu hóa. Các thành phần còn lại không có đủ nguyên tố Sulphur hữu ích, nên không có khả năng kháng bệnh.</p>
+                                <div class="input-group quantity mb-5" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-plus rounded-circle bg-light border">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ hàng</a>
+                            </div>
+                            <div class="col-lg-12">
+                                <nav>
+                                    <div class="nav nav-tabs mb-3">
+                                        <button class="nav-link active border-white border-bottom-0" type="button" role="tab"
+                                            id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+                                            aria-controls="nav-about" aria-selected="true">Miêu tả</button>
+                                        <button class="nav-link border-white border-bottom-0" type="button" role="tab"
+                                            id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission"
+                                            aria-controls="nav-mission" aria-selected="false">Đánh giá</button>
+                                    </div>
+                                </nav>
+                                <div class="tab-content mb-5">
+                                    <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                                        <p>Bông cải xanh được quầy rau củ quả Living Cells thu mua tại các khu vực miền Nam với chất lượng cực kỳ tốt</p>
+                                        <p>Sản phẩm tươi ngon, an toàn, có nhiều dinh dưỡng,..phục vụ nâng cao sức khỏe cho khác hàng</p>
+                                        <div class="px-2">
+                                            <div class="row g-4">
+                                                <div class="col-6">
+                                                    <div class="row bg-light align-items-center text-center justify-content-center py-2">
+                                                        <div class="col-6">
+                                                            <p class="mb-0">Số cân</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="mb-0">1 kg</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row text-center align-items-center justify-content-center py-2">
+                                                        <div class="col-6">
+                                                            <p class="mb-0">Xuất xứ</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="mb-0">Bến Tre</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row bg-light text-center align-items-center justify-content-center py-2">
+                                                        <div class="col-6">
+                                                            <p class="mb-0">Thu hoạch tại</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="mb-0">Nông trại ông Luan</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row text-center align-items-center justify-content-center py-2">
+                                                        <div class="col-6">
+                                                            <p class="mb-0">Kiểm duyệt</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="mb-0">CTTNHH LVCELLS</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row bg-light text-center align-items-center justify-content-center py-2">
+                                                        <div class="col-6">
+                                                            <p class="mb-0">Cân nặng nhẹ nhất</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <p class="mb-0">250g</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+                                        <div class="d-flex">
+                                            <img src="img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt="">
+                                            <div class="">
+                                                <p class="mb-2" style="font-size: 14px;">12/12/2023</p>
+                                                <div class="d-flex justify-content-between">
+                                                    <h5>Tố Trinh</h5>
+                                                    <div class="d-flex mb-3">
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                    </div>
+                                                </div>
+                                                <p>Trái cây ngon lắm shop ơi, tôi rất ưng. Đợt sau sẽ đặt thêm 1kg dâu tây. Giá vừa rẻ hàng vừa tươi ngon! Sẽ ủng hộ shop dài lâu!!! </p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <img src="img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt="">
+                                            <div class="">
+                                                <p class="mb-2" style="font-size: 14px;">18/12/2023</p>
+                                                <div class="d-flex justify-content-between">
+                                                    <h5>Ngọc Huyền</h5>
+                                                    <div class="d-flex mb-3">
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                        <i class="fa fa-star text-secondary"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="text-dark">Shop còn cam Úc không? Khi nào có cam tươi liên hệ tôi, tôi cần đặt 5 ký nhé! Mua về chia xóm ăn, ai cũng khen ngon tuyệt. </p>
+                                            </div>
+                                        </div>
+    
+                                
+                                      
+                                    <div class="tab-pane" id="nav-vision" role="tabpanel">
+                                        <p class="text-dark"></p>
+                                        <p class="mb-0"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="#">
+                                <h4 class="mb-5 fw-bold">Góp ý</h4>
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="border-bottom rounded">
+                                            <input type="text" class="form-control border-0 me-4" placeholder="Bạn muốn được gọi là gì? *">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="border-bottom rounded">
+                                            <input type="email" class="form-control border-0" placeholder="Mail của bạn *">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="border-bottom rounded my-4">
+                                            <textarea name="" id="" class="form-control border-0" cols="30" rows="8" placeholder="Nhận xét của bạn *" spellcheck="false"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="d-flex justify-content-between py-3 mb-5">
+                                            <div class="d-flex align-items-center">
+                                                <p class="mb-0 me-3">Đánh giá:</p>
+                                                <div class="d-flex align-items-center" style="font-size: 12px;">
+                                                    <i class="fa fa-star text-muted"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn border border-secondary text-primary rounded-pill px-4 py-3"> Nhận xét của bạn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div> 
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="row g-4 fruite">
+                            <div class="col-lg-12">
+                                <div class="input-group w-100 mx-auto d-flex mb-4">
+                                    <input type="search" class="form-control p-3" placeholder="Từ khóa" aria-describedby="search-icon-1">
+                                    <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                                </div>
+                                <div class="mb-4">
+                                    <h4>Loại</h4>
+                                    <ul class="list-unstyled fruite-categorie">
+                                        <li>
+                                            <div class="d-flex justify-content-between fruite-name">
+                                                <a href="#"><i class="fas fa-apple-alt me-2"></i>Táo</a>
+                                                <span>(3)</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between fruite-name">
+                                                <a href="#"><i class="fas fa-apple-alt me-2"></i>Cam</a>
+                                                <span>(5)</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between fruite-name">
+                                                <a href="#"><i class="fas fa-apple-alt me-2"></i>Dâu</a>
+                                                <span>(2)</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between fruite-name">
+                                                <a href="#"><i class="fas fa-apple-alt me-2"></i>Chuối</a>
+                                                <span>(8)</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="d-flex justify-content-between fruite-name">
+                                                <a href="#"><i class="fas fa-apple-alt me-2"></i>Khoai tây</a>
+                                                <span>(5)</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <h4 class="mb-4">Sản phẩm nổi bật</h4>
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="rounded" style="width: 100px; height: 100px;">
+                                        <img src="img/featur-1.jpg" class="img-fluid rounded" alt="Image">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Táo</h6>
+                                        <div class="d-flex mb-2">
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <h5 class="fw-bold me-2">30.000 đ</h5>
+                                            <h5 class="text-danger text-decoration-line-through">45.000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="rounded" style="width: 100px; height: 100px;">
+                                        <img src="img/featur-2.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Dâu tây</h6>
+                                        <div class="d-flex mb-2">
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <h5 class="fw-bold me-2">90.000 đ</h5>
+                                            <h5 class="text-danger text-decoration-line-through">115.000 đ</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="rounded" style="width: 100px; height: 100px;">
+                                        <img src="img/featur-3.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Bông cải xanh</h6>
+                                        <div class="d-flex mb-2">
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <h5 class="fw-bold me-2">17.000 đ</h5>
+                                            <h5 class="text-danger text-decoration-line-through">29.000 đ</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="rounded me-4" style="width: 100px; height: 100px;">
+                                        <img src="img/vegetable-item-4.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Ớt chuông</h6>
+                                        <div class="d-flex mb-2">
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <h5 class="fw-bold me-2">40.000 đ</h5>
+                                            <h5 class="text-danger text-decoration-line-through">55.000 đ</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="rounded me-4" style="width: 100px; height: 100px;">
+                                        <img src="img/vegetable-item-5.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Khoai tây</h6>
+                                        <div class="d-flex mb-2">
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <h5 class="fw-bold me-2">30.000 đ</h5>
+                                            <h5 class="text-danger text-decoration-line-through">35.000 đ</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="rounded me-4" style="width: 100px; height: 100px;">
+                                        <img src="img/vegetable-item-6.jpg" class="img-fluid rounded" alt="">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-2">Ngò</h6>
+                                        <div class="d-flex mb-2">
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="d-flex mb-2">
+                                            <h5 class="fw-bold me-2">20.000 đ</h5>
+                                            <h5 class="text-danger text-decoration-line-through">50.000 đ</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center my-4">
+                                    <a href="#" class="btn border border-secondary px-4 py-3 rounded-pill text-primary w-100">Xem thêm</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="position-relative">
+                                    <img src="img/banner-Trái cây.jpg" class="img-fluid w-100 rounded" alt="">
+                                    <div class="position-absolute" style="top: 50%; right: 10px; transform: translateY(-50%);">
+                                        <h3 class="text-secondary fw-bold">Quầy <br> Rau củ quả <br> Living Cells</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Product End -->
+    
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <h1 class="text-primary mb-0">LVCELLS</h1>
+                                <p class="text-secondary mb-0">Thông tin đáng tin cậy</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mx-auto">
+                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Email của bạn">
+                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Đăng ký ngay</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Lí do các bạn nên tin tưởng và lựa chọn chúng tôi!</h4>
+                            <p class="mb-4">Chúng tôi luôn đề cao mức độ an toàn của sản phẩm. 
+                                Chúng tôi luôn lắng nghe và tiếp thu ý kiến khách hàng.</p>
+                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Đọc thêm</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Thông tin cửa hàng</h4>
+                            <a class="btn-link" href="">Nhân sự</a>
+                            <a class="btn-link" href="">Liên hệ</a>
+                            <a class="btn-link" href="">Chính sách bảo mật</a>
+                            <a class="btn-link" href="">Điều khoản</a>
+                            <a class="btn-link" href="">Chính sách hoàn trả</a>
+                            <a class="btn-link" href="">Giải đáp thắc mắc</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Tài khoản</h4>
+                            <a class="btn-link" href="">Tài khoản của tôi</a>
+                            <a class="btn-link" href="">Thông tin cửa hàng</a>
+                            <a class="btn-link" href="">Giỏ hàng</a>
+                            <a class="btn-link" href="">Danh sách yêu thích</a>
+                            <a class="btn-link" href="">Lịch sử đơn hàng</a>
+                            <a class="btn-link" href="">Đơn quốc tế</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Liên hệ</h4>
+                            <p>Địa chỉ: An Dương Vương Quận 5 TPHCM </p>
+                            <p>Email: Livingcells@gmail.com</p>
+                            <p>Phone: +0123 4567 8910</p>
+                            <p>Thanh toán thành công </p>
+                            <img src="img/payment.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>LVCELL</a>, CẢM ƠN</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Thiết kế bởi <a class="border-bottom" href="https://htmlcodex.com">Living cells</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <style>
+        #snowflakeContainer{position:absolute;left:0px;top:0px;}
+        .snowflake{padding-left:15px;font-size:14px;line-height:24px;position:fixed;color:#ebebeb;user-select:none;z-index:1000;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;}
+        .snowflake:hover {cursor:default}
+    </style>
+    <div id='snowflakeContainer'>
+    <p class='snowflake'>🥦</p>
+    </div>
+    <script style='text/javascript'>
+        var requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var transforms=["transform","msTransform","webkitTransform","mozTransform","oTransform"];
+        var transformProperty=getSupportedPropertyName(transforms);var snowflakes=[];
+        var browserWidth;
+        var browserHeight;
+        var numberOfSnowflakes=50;
+        var resetPosition=false;
+        function setup(){window.addEventListener("DOMContentLoaded",generateSnowflakes,false);
+        window.addEventListener("resize",setResetFlag,false)}setup();
+        function getSupportedPropertyName(b){for(var a=0;a<b.length;a++){if(typeof document.body.style[b[a]]!="undefined"){return b[a]}}return null}
+        function Snowflake(b,a,d,e,c){this.element=b;
+        this.radius=a;this.speed=d;this.xPos=e;this.yPos=c;this.counter=0;
+        this.sign=Math.random()<0.5?1:-1;this.element.style.opacity=0.5+Math.random();
+        this.element.style.fontSize=4+Math.random()*30+"px"}Snowflake.prototype.update=function()
+        {this.counter+=this.speed/5000;this.xPos+=this.sign*this.speed*Math.cos(this.counter)/40;this.yPos+=Math.sin(this.counter)/40+this.speed/30;setTranslate3DTransform(this.element,Math.round(this.xPos),Math.round(this.yPos));if(this.yPos>browserHeight){this.yPos=-50}};
+        function setTranslate3DTransform(a,c,b){var d="translate3d("+c+"px, "+b+"px, 0)";a.style[transformProperty]=d}
+        function generateSnowflakes(){var b=document.querySelector(".snowflake");
+        var h=b.parentNode;browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;
+        for(var d=0;d<numberOfSnowflakes;d++){var j=b.cloneNode(true);h.appendChild(j);var e=getPosition(50,browserWidth);
+        var a=getPosition(50,browserHeight);var c=5+Math.random()*40;var g=4+Math.random()*10;var f=new Snowflake(j,g,c,e,a);snowflakes.push(f)}h.removeChild(b);moveSnowflakes()}function moveSnowflakes(){for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.update()}if(resetPosition){browserWidth=document.documentElement.clientWidth;browserHeight=document.documentElement.clientHeight;for(var b=0;b<snowflakes.length;b++){var a=snowflakes[b];a.xPos=getPosition(50,browserWidth);a.yPos=getPosition(50,browserHeight)}resetPosition=false}requestAnimationFrame(moveSnowflakes)}
+        function getPosition(b,a){return Math.round(-1*b+Math.random()*(a+2*b))}function setResetFlag(a){resetPosition=true};
+    </script>
+    </body>
+
+</html>
